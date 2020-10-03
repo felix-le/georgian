@@ -7,8 +7,25 @@ body {
   min-width: 768px;
   max-width: 1024px;
 }
-
+.clearfix {
+  overflow: auto;
+}
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: table;
+}
 img {
   height: auto;
   width: inherit;
+  float: left;
+  padding-right: 30px;
+}
+
+header {
+  text-align: center;
+}
+
+footer {
+  text-align: right;
 }
